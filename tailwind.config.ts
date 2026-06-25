@@ -9,8 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        eduo: {
+          blue:    "#00AEEF",
+          pink:    "#EC008C",
+          gray:    "#6E6E6E",
+          lime:    "#C8E32B",
+          cyan:    "#00E5C8",
+          cobalt:  "#0D00FF",
+        },
+      },
+      fontFamily: {
+        sans: ["var(--font-quicksand)", "Quicksand", "sans-serif"],
+      },
+      borderRadius: {
+        "4xl": "32px",
       },
     },
   },
