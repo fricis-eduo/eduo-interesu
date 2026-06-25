@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     title: "Eduo Interešu Izglītība",
     description:
       "Mācām ar prieku, spēlēm un interesi! Nodarbības tieši jūsu bērnudārzā.",
-    url: "https://darzini.eduo.lv",
+    url: "https://eduo.lv",
     locale: "lv_LV",
     type: "website",
   },
   alternates: {
-    canonical: "https://darzini.eduo.lv",
+    canonical: "https://eduo.lv",
   },
 };
 

@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
         html: `
           <div style="font-family:sans-serif;max-width:600px;color:#1a202c">
             <h2 style="color:#00AEEF;margin-bottom:24px">
-              Jauns pieteikums — darzini.eduo.lv
+              Jauns pieteikums — eduo.lv
             </h2>
             <table style="border-collapse:collapse;width:100%;font-size:15px">
               <tr>
