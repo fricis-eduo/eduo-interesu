@@ -11,6 +11,7 @@ type FormData = {
   role: "director" | "parent";
   kindergarten: string;
   message: string;
+  privacy: boolean;
   _honeypot?: string;
 };
 
@@ -181,6 +182,27 @@ export default function ContactForm() {
                 />
                 {errors.message && (
                   <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
+                )}
+              </div>
+
+              {/* Privacy consent */}
+              <div>
+                <label className="flex items-start gap-3 cursor-pointer">
+                  <input
+                    {...register("privacy", { required: "Lūdzu, apstipriniet privātuma politiku" })}
+                    type="checkbox"
+                    className="mt-1 w-4 h-4 accent-eduo-blue shrink-0"
+                  />
+                  <span className="text-sm text-gray-600 leading-relaxed">
+                    Esmu iepazinies/-usies ar{" "}
+                    <a href="/privatuma-politika" target="_blank" className="text-eduo-blue underline hover:text-eduo-pink">
+                      privātuma politiku
+                    </a>{" "}
+                    un piekrītu savu personas datu apstrādei.
+                  </span>
+                </label>
+                {errors.privacy && (
+                  <p className="text-red-500 text-sm mt-1">{errors.privacy.message}</p>
                 )}
               </div>
 
