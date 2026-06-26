@@ -33,7 +33,7 @@ export default function Platform() {
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight tracking-tight mb-4">
               Vairāk nekā tikai pulciņš.{" "}
-              <span className="text-eduo-cyan">Iepazīsti EDUO digitālo platformu.</span>
+              <span className="text-orange-400">Iepazīsti EDUO digitālo platformu.</span>
             </h2>
 
             <p className="text-white/70 text-base leading-relaxed mb-6 max-w-lg">
@@ -45,7 +45,7 @@ export default function Platform() {
               href="https://eduo.me"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-eduo-cyan text-slate-900 font-bold text-sm px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 bg-orange-400 text-slate-900 font-bold text-sm px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
             >
               Atklāt EDUO Platformu
               <ExternalLink size={16} />
