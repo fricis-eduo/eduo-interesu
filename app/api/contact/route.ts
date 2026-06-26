@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
     if (transporter) {
       await transporter.sendMail({
         from: `"EDUO mājaslapa" <${process.env.GMAIL_USER}>`,
-        to: "interesu@eduo.lv",
+        to: "interesu@eduo.me",
         replyTo: email,
         subject: `Jauns pieteikums — ${name}`,
         html: `
