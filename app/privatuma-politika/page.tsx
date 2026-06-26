@@ -73,7 +73,7 @@ export default function PrivatumaPolitika() {
             <ul className="list-disc pl-6 mt-2 space-y-1">
               <li>Piekļūt saviem personas datiem</li>
               <li>Labot neprecīzus datus</li>
-              <li>Dzēst savus datus ("tiesības tikt aizmirstam")</li>
+              <li>Dzēst savus datus (&quot;tiesības tikt aizmirstam&quot;)</li>
               <li>Iebilst pret datu apstrādi</li>
               <li>Iesniegt sūdzību Datu valsts inspekcijā (dvi.gov.lv)</li>
             </ul>
