@@ -11,15 +11,14 @@ const PLATFORM_ITEMS = [
 
 export default function Platform() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-eduo-blue via-blue-500 to-indigo-600 py-24 px-4">
-      {/* Subtle background blobs */}
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-950 py-14 px-4">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-[-80px] right-[-80px] w-[400px] h-[400px] rounded-full bg-white/5 blur-3xl" />
-        <div className="absolute bottom-[-60px] left-[-60px] w-[350px] h-[350px] rounded-full bg-indigo-800/30 blur-3xl" />
+        <div className="absolute top-0 right-0 w-[300px] h-[300px] rounded-full bg-eduo-blue/10 blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[250px] h-[250px] rounded-full bg-indigo-600/10 blur-3xl" />
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
           {/* Left — text */}
           <motion.div
@@ -32,25 +31,21 @@ export default function Platform() {
               ✦ EDUO Ekosistēma
             </div>
 
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
-              Vairāk nekā{" "}
-              <br className="hidden sm:block" />
-              tikai pulciņš.{" "}
-              <span className="text-yellow-300">Iepazīsti EDUO digitālo platformu.</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight tracking-tight mb-4">
+              Vairāk nekā tikai pulciņš.{" "}
+              <span className="text-eduo-cyan">Iepazīsti EDUO digitālo platformu.</span>
             </h2>
 
-            <p className="text-white/80 text-lg leading-relaxed mb-8 max-w-lg">
-              Mūsu izglītības ekosistēma nebeidzas klātienē. Lielākiem bērniem
-              (no 7. klases) un pieaugušajiem piedāvājam inovatīvu AI platformu
-              skolas priekšmetu un valodu apguvei,{" "}
-              <span className="text-white font-semibold">kā arī tiešsaistes nodarbībām.</span>
+            <p className="text-white/70 text-base leading-relaxed mb-6 max-w-lg">
+              Lielākiem bērniem un pieaugušajiem — AI platforma skolas priekšmetu
+              un valodu apguvei, kā arī tiešsaistes nodarbības.
             </p>
 
             <a
               href="https://eduo.me"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white text-eduo-blue font-bold text-base px-7 py-4 rounded-full hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center gap-2 bg-eduo-cyan text-slate-900 font-bold text-sm px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
             >
               Atklāt EDUO Platformu
               <ExternalLink size={16} />
