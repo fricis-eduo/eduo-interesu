@@ -40,6 +40,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://eduo.lv",
   },
+  verification: {
+    google: "xKBSf_X-sPr6N267AE1GVpyyfGVGTq2KPNSaChTwkKI",
+  },
   robots: {
     index: true,
     follow: true,
