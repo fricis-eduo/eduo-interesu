@@ -1,15 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
-const resend = process.env.RESEND_API_KEY
-  ? new Resend(process.env.RESEND_API_KEY)
-  : null;
+const transporter =
+  process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD
+    ? nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+          user: process.env.GMAIL_USER,
+          pass: process.env.GMAIL_APP_PASSWORD,
+        },
+      })
+    : null;
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
-    // Honeypot: bots fill hidden fields, humans never do
     if (body._honeypot) {
       return NextResponse.json({ ok: true });
     }
@@ -18,10 +24,10 @@ export async function POST(req: NextRequest) {
     const roleLabel =
       role === "director" ? "Bērnudārza vadītājs/a" : "Vecāks";
 
-    if (resend) {
-      await resend.emails.send({
-        from: "EDUO mājaslapa <noreply@eduo.lv>",
-        to: ["interesu@eduo.lv"],
+    if (transporter) {
+      await transporter.sendMail({
+        from: `"EDUO mājaslapa" <${process.env.GMAIL_USER}>`,
+        to: "interesu@eduo.lv",
         replyTo: email,
         subject: `Jauns pieteikums — ${name}`,
         html: `
@@ -63,7 +69,6 @@ export async function POST(req: NextRequest) {
         `,
       });
     } else {
-      // No API key — log locally during development
       console.log("[CONTACT FORM]", new Date().toISOString(), {
         name, email, phone, role, kindergarten, message,
       });
