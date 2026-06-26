@@ -25,6 +25,16 @@ export const AGE_GROUPS = [
       "Stāsti, dialogi un ikdienas situācijas angliski. Veidojam drošu pārliecību un liekam pamatus skolas angļu valodas programmai.",
     age: "5–7 gadi",
   },
+  {
+    id: "english-school",
+    icon: "School",
+    color: "bg-eduo-cyan/10 text-teal-700",
+    accent: "border-eduo-cyan/20",
+    name: "Angļu valoda 1.–4. klasei",
+    description:
+      "Padziļinām skolas programmu un veidojam stabilu angļu valodas bāzi. Nodarbības tiek pielāgotas klases līmenim un skolēnu tempam.",
+    age: "1.–4. klase",
+  },
 ];
 
 export const PROGRAM_FEATURES = [
@@ -56,8 +66,8 @@ export const PROGRAM_FEATURES = [
 
 export const STATS = [
   { value: 5, suffix: "+", label: "Gadi tirgū" },
-  { value: 2000, suffix: "+", label: "Bērni apmācīti" },
-  { value: 20, suffix: "+", label: "Partnerbērnudārzi" },
+  { value: 1000, suffix: "+", label: "Bērni apmācīti" },
+  { value: 10, suffix: "+", label: "Partneriestādes" },
   { value: 20, suffix: "+", label: "Sertificēti pedagogi" },
 ];
 
@@ -127,7 +137,7 @@ export const TESTIMONIALS = [
 export const FAQ_ITEMS = [
   {
     q: "Kāda vecuma bērniem ir piemērotas nodarbības?",
-    a: "Mūsu programmas ir izstrādātas bērniem vecumā no 3 līdz 7 gadiem. Katrai vecuma grupai tiek pielāgots saturs un metodes, lai nodrošinātu optimālu attīstību.",
+    a: "Mūsu programmas ir izstrādātas bērniem vecumā no 3 gadiem līdz 4. klasei. Katrai vecuma grupai tiek pielāgots saturs un metodes — no rotaļājošas pirmsskolas pieejas līdz strukturētākām skolas nodarbībām.",
   },
   {
     q: "Kā notiek nodarbību grafika saskaņošana ar bērnudārzu?",

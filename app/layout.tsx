@@ -11,9 +11,10 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://eduo.lv"),
   title: "EDUO — Angļu valoda bērnudārzos Latvijā | Interešu izglītība",
   description:
-    "Licencēta interešu izglītība bērniem 3–7 gadu vecumā. Angļu valodas nodarbības tieši jūsu bērnudārzā. 5+ gadi pieredzē, 2000+ bērni, 20+ partnerbērnudārzi.",
+    "Licencēta interešu izglītība bērniem no 3 gadiem līdz 4. klasei. Angļu valodas nodarbības tieši jūsu bērnudārzā vai skolā. 5+ gadi pieredzē, 1000+ bērni, 10+ partneriestādes.",
   keywords: [
     "angļu valoda bērnudārzā",
     "interešu izglītība",

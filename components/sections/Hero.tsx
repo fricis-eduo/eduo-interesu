@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
 const TRUST_BADGES = [
-  "20+ partnerbērnudārzi",
+  "10+ partneriestādes",
   "Licencēta izglītības organizācija",
   "Bezmaksas konsultācija",
 ];

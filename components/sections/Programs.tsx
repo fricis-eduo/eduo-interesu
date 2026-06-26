@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Globe, BookOpen, MessageCircle, GraduationCap, Award } from "lucide-react";
+import { Globe, BookOpen, MessageCircle, GraduationCap, Award, School } from "lucide-react";
 import { AGE_GROUPS, PROGRAM_FEATURES } from "@/lib/constants";
 
 const ICON_MAP: Record<string, React.ElementType> = {
@@ -10,6 +10,7 @@ const ICON_MAP: Record<string, React.ElementType> = {
   MessageCircle,
   GraduationCap,
   Award,
+  School,
 };
 
 export default function Programs() {
@@ -37,7 +38,7 @@ export default function Programs() {
         </motion.div>
 
         {/* Age group cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
           {AGE_GROUPS.map((p, index) => {
             const Icon = ICON_MAP[p.icon] ?? Globe;
             return (
