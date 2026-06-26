@@ -6,6 +6,7 @@ import Stats from "@/components/sections/Stats";
 import Methodology from "@/components/sections/Methodology";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
+import Platform from "@/components/sections/Platform";
 import ContactForm from "@/components/sections/ContactForm";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <Methodology />
         <Testimonials />
         <FAQ />
+        <Platform />
         <ContactForm />
       </main>
       <Footer />
