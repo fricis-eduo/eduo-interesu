@@ -31,6 +31,7 @@ export default function Navbar() {
             alt="EDUO"
             width={120}
             height={40}
+            sizes="120px"
             className={`h-9 w-auto transition-all duration-300 ${
               scrolled ? "" : "brightness-0 invert"
             }`}
