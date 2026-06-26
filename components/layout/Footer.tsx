@@ -47,8 +47,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-gray-300 mb-6">
               <li>
-                <a href="mailto:interesu@eduo.lv" className="hover:text-eduo-cyan transition-colors">
-                  interesu@eduo.lv
+                <a href="mailto:interesu@eduo.me" className="hover:text-eduo-cyan transition-colors">
+                  interesu@eduo.me
                 </a>
               </li>
               <li>
@@ -59,13 +59,15 @@ export default function Footer() {
             </ul>
             <div className="flex gap-3">
               {[
-                { Icon: Share2, label: "Instagram" },
-                { Icon: Users, label: "Facebook" },
-                { Icon: Music2, label: "TikTok" },
-              ].map(({ Icon, label }) => (
+                { Icon: Share2, label: "Instagram", href: "https://www.instagram.com/eduo_me/" },
+                { Icon: Users, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61571778179016" },
+                { Icon: Music2, label: "TikTok", href: "#" },
+              ].map(({ Icon, label, href }) => (
                 <a
                   key={label}
-                  href="#"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center hover:bg-eduo-blue transition-colors"
                 >
@@ -77,7 +79,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
-          <span>© 2025 SIA EDUO. Visas tiesības aizsargātas.</span>
+          <span>© 2026 SIA EDUO. Visas tiesības aizsargātas.</span>
           <a href="#" className="hover:text-gray-300 transition-colors">
             Privātuma politika
           </a>
