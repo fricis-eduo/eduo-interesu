@@ -10,20 +10,69 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: "Eduo — Interešu izglītība bērnudārzos | Angļu valoda, STEAM",
+  title: "EDUO — Angļu valoda bērnudārzos Latvijā | Interešu izglītība",
   description:
-    "Mācām ar prieku, spēlēm un interesi! Angļu valodas un STEAM nodarbības tieši jūsu bērnudārzā. Pieteikties →",
+    "Licencēta interešu izglītība bērniem 3–7 gadu vecumā. Angļu valodas nodarbības tieši jūsu bērnudārzā. 5+ gadi pieredzē, 2000+ bērni, 20+ partnerbērnudārzi.",
+  keywords: [
+    "angļu valoda bērnudārzā",
+    "interešu izglītība",
+    "bērnu angļu valoda",
+    "valodas nodarbības bērniem",
+    "EDUO",
+    "bērnudārzs angļu",
+    "pirmsskola angļu valoda",
+  ],
   openGraph: {
-    title: "Eduo Interešu Izglītība",
+    title: "EDUO — Angļu valoda bērnudārzos",
     description:
-      "Mācām ar prieku, spēlēm un interesi! Nodarbības tieši jūsu bērnudārzā.",
+      "Mācām ar prieku, spēlēm un interesi! Nodarbības tieši jūsu bērnudārzā. 5+ gadi pieredzē.",
     url: "https://eduo.lv",
+    siteName: "EDUO",
     locale: "lv_LV",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EDUO — Angļu valoda bērnudārzos",
+    description:
+      "Mācām ar prieku, spēlēm un interesi! Nodarbības tieši jūsu bērnudārzā.",
   },
   alternates: {
     canonical: "https://eduo.lv",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: "EDUO",
+  description:
+    "Licencēta interešu izglītības organizācija. Angļu valodas nodarbības bērniem 3–7 gadu vecumā tieši bērnudārzos.",
+  url: "https://eduo.lv",
+  logo: "https://eduo.lv/assets/EDUO_LOGO_pllats_zils.png",
+  email: "interesu@eduo.me",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "LV",
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "Latvia",
+  },
+  audience: {
+    "@type": "EducationalAudience",
+    educationalRole: "student",
+    audienceType: "Children aged 3–7",
+  },
+  sameAs: ["https://www.eduo.lv"],
 };
 
 export default function RootLayout({
@@ -33,6 +82,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="lv" className={quicksand.variable}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );
