@@ -6,7 +6,7 @@ import { TESTIMONIALS } from "@/lib/constants";
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="section-padding bg-gray-50">
+    <section id="testimonials" className="section-padding bg-gradient-to-br from-eduo-blue/10 via-eduo-blue/5 to-white">
       <div className="container-max">
         {/* Header */}
         <motion.div

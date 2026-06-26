@@ -5,11 +5,12 @@ export const NAV_LINKS = [
   { label: "Kontakti", href: "#contact" },
 ];
 
-export const PROGRAMS = [
+export const AGE_GROUPS = [
   {
     id: "english-small",
     icon: "Globe",
     color: "bg-eduo-blue/10 text-eduo-blue",
+    accent: "border-eduo-blue/20",
     name: "Angļu valoda 3–5 gadiem",
     description:
       "Pirmie soļi angļu valodā caur dziesmām, spēlēm un krāsainām aktivitātēm. Bērni apgūst valodu dabiski — bez spiediena un ar smaidu.",
@@ -19,19 +20,22 @@ export const PROGRAMS = [
     id: "english-big",
     icon: "BookOpen",
     color: "bg-eduo-pink/10 text-eduo-pink",
+    accent: "border-eduo-pink/20",
     name: "Angļu valoda 5–7 gadiem",
     description:
       "Stāsti, dialogi un ikdienas situācijas angliski. Veidojam drošu pārliecību un liekam pamatus skolas angļu valodas programmai.",
     age: "5–7 gadi",
   },
+];
+
+export const PROGRAM_FEATURES = [
   {
     id: "method",
     icon: "MessageCircle",
     color: "bg-eduo-lime/20 text-green-700",
     name: "Komunikatīvā metode",
     description:
-      "Mēs runājam, dziedam, spēlējam un zīmējam — viss notiek angliski. Bērni mācās darot, nevis iegaumējot vārdu sarakstus.",
-    age: "3–7 gadi",
+      "Runājam, dziedam un spēlējam — viss notiek angliski. Bērni mācās darot, nevis iegaumējot vārdu sarakstus.",
   },
   {
     id: "school-prep",
@@ -39,8 +43,15 @@ export const PROGRAMS = [
     color: "bg-eduo-cyan/20 text-teal-700",
     name: "Sagatavošana skolai",
     description:
-      "Mūsu programma balstīta uz skolas angļu valodas mācību kursa pamata. Pirmklasnieki sāk ar drošu priekšzināšanu un bez bažām.",
-    age: "5–7 gadi",
+      "Programma balstīta uz skolas angļu valodas kursa pamata. Pirmklasnieki sāk ar drošu priekšzināšanu.",
+  },
+  {
+    id: "teachers",
+    icon: "Award",
+    color: "bg-eduo-pink/10 text-eduo-pink",
+    name: "Sertificēti pedagogi",
+    description:
+      "Visi mūsu skolotāji ir sertificēti ar pieredzi pirmsskolas vecuma bērnu mācīšanā. Regulāra kvalifikācijas pilnveide.",
   },
 ];
 
@@ -57,14 +68,14 @@ export const METHODOLOGY_STEPS = [
     icon: "Phone",
     title: "Sazināmies",
     description:
-      "Sazinieties ar mums un mēs vienosimies par piemērotāko programmu un grafiku jūsu iestādei. Bezmaksas konsultācija 30 minūtēs.",
+      "Aizpildiet pieteikumu un mēs sazināsimies ar jums, lai vienotos par piemērotāko programmu un grafiku jūsu iestādei.",
   },
   {
     number: "02",
     icon: "MapPin",
-    title: "Ienākam pie jums",
+    title: "Sadarbība ar bērnudārzu",
     description:
-      "Mūsu pedagogi ierodas jūsu bērnudārzā ar visiem nepieciešamajiem materiāliem. Jums — nulles administratīvā slodze.",
+      "Kopā ar vadību saskaņojam grafiku un nodarbību formātu. Mūsu pedagogi ierodas ar visiem materiāliem — jums nulles slodze.",
   },
   {
     number: "03",
