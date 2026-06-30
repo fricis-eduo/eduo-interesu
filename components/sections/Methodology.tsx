@@ -35,7 +35,7 @@ export default function Methodology() {
 
         {/* Steps */}
         <div className="relative">
-          <div className="hidden lg:block absolute top-12 left-[16.66%] right-[16.66%] h-0.5 bg-eduo-blue/20" />
+          <div className="hidden lg:block absolute top-12 left-[16.66%] right-[16.66%] h-0.5 bg-eduo-blue/20 z-0" />
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {METHODOLOGY_STEPS.map((step, index) => {
@@ -49,7 +49,7 @@ export default function Methodology() {
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.5, delay: index * 0.15 }}
                 >
-                  <div className="relative mb-6">
+                  <div className="relative mb-6 z-10">
                     <div className="w-24 h-24 rounded-full bg-eduo-blue/10 flex items-center justify-center">
                       <Icon size={32} className="text-eduo-blue" />
                     </div>
