@@ -35,7 +35,13 @@ export default function Methodology() {
 
         {/* Steps */}
         <div className="relative">
-          <div className="hidden lg:block absolute top-12 left-[16.66%] right-[16.66%] h-0.5 bg-eduo-blue/20 z-0" />
+          <motion.div
+            className="hidden lg:block absolute top-12 left-[16.66%] right-[16.66%] h-0.5 bg-eduo-blue/20 z-0 origin-left"
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+          />
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {METHODOLOGY_STEPS.map((step, index) => {
