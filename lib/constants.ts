@@ -10,9 +10,9 @@ export const AGE_GROUPS = [
     icon: "Globe",
     color: "bg-eduo-blue/10 text-eduo-blue",
     accent: "border-eduo-blue/20",
-    name: "Angļu valoda 3–5 gadiem",
+    name: "Pirmie soļi angliski",
     description:
-      "Pirmie soļi angļu valodā caur dziesmām, spēlēm un krāsainām aktivitātēm. Bērni apgūst valodu dabiski — bez spiediena un ar smaidu.",
+      "Angļu valoda caur dziesmām, spēlēm un krāsainām aktivitātēm. Bērni apgūst valodu dabiski — bez spiediena un ar smaidu.",
     age: "3–5 gadi",
   },
   {
@@ -20,7 +20,7 @@ export const AGE_GROUPS = [
     icon: "BookOpen",
     color: "bg-eduo-pink/10 text-eduo-pink",
     accent: "border-eduo-pink/20",
-    name: "Angļu valoda 5–7 gadiem",
+    name: "Angļu valodas pamati",
     description:
       "Stāsti, dialogi un ikdienas situācijas angliski. Veidojam drošu pārliecību un liekam pamatus skolas angļu valodas programmai.",
     age: "5–7 gadi",
@@ -30,10 +30,10 @@ export const AGE_GROUPS = [
     icon: "School",
     color: "bg-eduo-cyan/10 text-teal-700",
     accent: "border-eduo-cyan/20",
-    name: "Angļu valoda 1.–4. klasei",
+    name: "Sākumskola angliski",
     description:
-      "Padziļinām skolas programmu un veidojam stabilu angļu valodas bāzi. Nodarbības tiek pielāgotas klases līmenim un skolēnu tempam.",
-    age: "1.–4. klase",
+      "Padziļinām skolas programmu un veidojam stabilu angļu valodas bāzi. Nodarbības tiek pielāgotas klases līmenim un skolēna tempam.",
+    age: "1.–2. klase",
   },
 ];
 
@@ -68,7 +68,7 @@ export const STATS = [
   { value: 5, suffix: "+", label: "Gadi tirgū" },
   { value: 1000, suffix: "+", label: "Bērni apmācīti" },
   { value: 10, suffix: "+", label: "Partneriestādes" },
-  { value: 20, suffix: "+", label: "Sertificēti pedagogi" },
+  { value: 10, suffix: "+", label: "Sertificēti pedagogi" },
 ];
 
 export const METHODOLOGY_STEPS = [
@@ -82,7 +82,7 @@ export const METHODOLOGY_STEPS = [
   {
     number: "02",
     icon: "MapPin",
-    title: "Sadarbība ar bērnudārzu",
+    title: "Sadarbība ar iestādi",
     description:
       "Kopā ar vadību saskaņojam grafiku un nodarbību formātu. Mūsu pedagogi ierodas ar visiem materiāliem — jums nulles slodze.",
   },
