@@ -232,8 +232,8 @@ export default function ContactForm() {
 
         {/* Contact info below */}
         <div className="text-center mt-10 flex flex-wrap justify-center gap-6 text-white/80 text-base">
-          <a href="mailto:interesu@eduo.lv" className="hover:text-white transition-colors">
-            📧 interesu@eduo.lv
+          <a href="mailto:interesu@eduo.me" className="hover:text-white transition-colors">
+            📧 interesu@eduo.me
           </a>
           <a href="https://www.eduo.lv" className="hover:text-white transition-colors">
             🌐 www.eduo.lv

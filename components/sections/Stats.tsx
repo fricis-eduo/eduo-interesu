@@ -81,8 +81,8 @@ export default function Stats() {
         {/* Sub note */}
         <p className="text-center text-white/80 text-sm mt-12 max-w-xl mx-auto">
           SIA EDUO ir licencēta organizācija, kuras mērķis ir piedāvāt modernu,
-          interaktīvu un mūsdienīgu angļu valodas apmācību programmu pirmsskolas
-          vecuma bērniem.
+          interaktīvu un mūsdienīgu angļu valodas apmācību programmu bērniem
+          no pirmsskolas līdz sākumskolai.
         </p>
       </div>
     </section>

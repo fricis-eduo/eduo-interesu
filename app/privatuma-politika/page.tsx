@@ -85,9 +85,26 @@ export default function PrivatumaPolitika() {
 
           <section>
             <h2 className="text-xl font-bold text-gray-900 mb-3">7. Sīkdatnes</h2>
-            <p>
-              Šī vietne pašlaik neizmanto izsekošanas vai analītikas sīkdatnes.
-              Vietne var izmantot tehniskas sīkdatnes, kas nepieciešamas tās darbībai.
+            <p className="mb-3">
+              Šī vietne var izmantot šādas sīkdatnes:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>
+                <strong>Analītikas sīkdatnes</strong> — Google Analytics (GA4)
+                sīkdatnes (<code className="bg-gray-100 px-1 rounded text-sm">_ga</code>,{" "}
+                <code className="bg-gray-100 px-1 rounded text-sm">_ga_*</code>),
+                kas palīdz saprast, kā apmeklētāji izmanto vietni. Šīs sīkdatnes
+                tiek iestatītas tikai ar jūsu piekrišanu.
+              </li>
+              <li>
+                <strong>Tehniskās sīkdatnes</strong> — nepieciešamas vietnes
+                pamatfunkcijām. Šādas sīkdatnes neapstrādā personas datus un
+                piekrišana tām nav nepieciešama.
+              </li>
+            </ul>
+            <p className="mt-3">
+              Jūs varat jebkurā laikā mainīt savu izvēli, dzēšot sīkdatnes
+              pārlūkprogrammas iestatījumos.
             </p>
           </section>
 
