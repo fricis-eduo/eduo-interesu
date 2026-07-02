@@ -2,6 +2,7 @@ export const NAV_LINKS = [
   { label: "Programmas", href: "#programs" },
   { label: "Metodika", href: "#methodology" },
   { label: "Atsauksmes", href: "#testimonials" },
+  { label: "Veikals ✦", href: "/veikals" },
 ];
 
 export const AGE_GROUPS = [

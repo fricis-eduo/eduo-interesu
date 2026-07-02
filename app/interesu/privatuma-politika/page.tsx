@@ -12,7 +12,7 @@ export default function PrivatumaPolitika() {
     <div className="min-h-screen bg-white">
       <div className="max-w-3xl mx-auto px-4 py-16">
         <Link
-          href="/interesu"
+          href="/"
           className="inline-flex items-center gap-2 text-eduo-blue font-semibold mb-10 hover:text-eduo-pink transition-colors"
         >
           ← Atpakaļ uz sākumlapu
