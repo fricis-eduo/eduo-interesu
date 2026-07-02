@@ -93,7 +93,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
           <span>© 2026 SIA EDUO. Visas tiesības aizsargātas.</span>
-          <a href="/privatuma-politika" className="hover:text-gray-300 transition-colors">
+          <a href="/interesu/privatuma-politika" className="hover:text-gray-300 transition-colors">
             Privātuma politika
           </a>
         </div>

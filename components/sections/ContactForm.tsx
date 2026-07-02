@@ -195,7 +195,7 @@ export default function ContactForm() {
                   />
                   <span className="text-sm text-gray-600 leading-relaxed">
                     Esmu iepazinies/-usies ar{" "}
-                    <a href="/privatuma-politika" target="_blank" className="text-eduo-blue underline hover:text-eduo-pink">
+                    <a href="/interesu/privatuma-politika" target="_blank" className="text-eduo-blue underline hover:text-eduo-pink">
                       privātuma politiku
                     </a>{" "}
                     un piekrītu savu personas datu apstrādei.
